@@ -19,6 +19,7 @@ Specific variables I used to explore this problem domain includes the total popu
 
 ## Charts
 
+
 **Trends Over Time Chart**
 
 ```{r over time plot, echo = FALSE, warning = FALSE}
@@ -28,6 +29,7 @@ over_time_line_plot
 I included this line plot because it shows the difference in the proportion of specifc races that were incarderated in one specific county, Amelia County. These proportions were calculated per year by dividing the total population of one race by the total population of those in jail. Through this line plot, we can see that those who were least incarcerated were those of Asian American/ Pacific Islander and White descent, while Black, LatinX, and Native Americans take the lead. 
 
 
+
 **Variable Comparison Chart**
 
 ```{r comparison chart, echo = FALSE, warning = FALSE}
@@ -35,6 +37,7 @@ comparison_scatterplot
 ```
 
 I included this chart to compare counties's proportion of total populations in jail compared to the proportion of people in jail that were black (specifically, between the ages of 15 to 64) in 2010. This scatterplot can be used to see if there is any correlation between the amount of people in jail and the amount of people in jail that are black. It is clear in this chart that the higher percent of people in jail, there is a correlation to a higher proportion of those in jail are black. It seems to be an exponential growth, meaning that the correlation between the two variables increases at an increasing rate. I also added a legend of the region that each county represented is, so we can see the general location of the counties to make more correlations. 
+
 
 
 **Map Chart**

@@ -51,7 +51,8 @@ over_time_line_plot <- ggplot(data = one_county, aes(x = year)) +
        fill = "Type") +
   scale_color_discrete(name = "Races",
                        labels = c("Asian American / Pacific Islander",
-                                  "Black", "LatinX", "Native American", "White"))
+                                  "Black", "LatinX", "Native American",
+                                  "White"))
 
 
 #Variable comparison chart
@@ -68,7 +69,9 @@ comparison_table <- raw_data %>%
 
 
 comparison_scatterplot <- ggplot(comparison_table,
-                                 aes(x = prop_jail, y = prop_black, color = region)) +
+                                 aes(x = prop_jail,
+                                     y = prop_black,
+                                     color = region)) +
   geom_point(alpha = 0.7, size = 5) +
   theme(legend.position = "bottom",
         legend.title = element_text(size = 15),
