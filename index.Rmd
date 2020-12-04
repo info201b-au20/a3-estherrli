@@ -12,7 +12,7 @@ source("C:/Users/esthe/Desktop/info_201/a3-estherrli/analysis.R")
 
 ## Introduction and Summary
 
-The dataset explored in this file provides county-level data of prison and jail incarcerations over time in the United States. The problem area I explored is the inequality in different races are incarcerated. Different races will have different proportions of incarceration when compared to other races in the total population of counties. 
+The dataset explored in this file provides county-level data of prison and jail incarcerations over time in the United States. The problem area I explored is the inequality in different races are incarcerated. Different races will have different proportions of incarceration when compared to other races in the total population of counties. In this assignment, I calculated many proportions of variables, comparing them amongst each other and coded them into charts. Some of the proportions include the proportions of white people to the population, or black people to population, or white and black populations in jail in proportion to the toal amount of people in jail. 
 
 Specific variables I used to explore this problem domain includes the total population of counties, the population of those that are jailed, and total populations of specific races that are jailed in specific counties. When applied to Washington State in the year 2010 (which is the year some of the charts I made are based in), the mean Black population in jails across all counties are around 53, while the White is around 207. The maximum population of Blacks in Jail is 966, while the White population is 1468, and minimum for Blacks in jail is 0, while White is 5. By using these variables, I was able to see the differences in the proportions of populations that are in jail, comparing them by race. 
 
@@ -26,7 +26,7 @@ Specific variables I used to explore this problem domain includes the total popu
 over_time_line_plot
 ```
 
-I included this line plot because it shows the difference in the proportion of specifc races that were incarderated in one specific county, Amelia County. These proportions were calculated per year by dividing the total population of one race by the total population of those in jail. Through this line plot, we can see that those who were least incarcerated were those of Asian American/ Pacific Islander and White descent, while Black, LatinX, and Native Americans take the lead. 
+I included this line plot because it shows the difference in the proportion of specifc races that were incarderated in one specific county, Amelia County. These proportions were calculated per year by dividing the total population of one race by the total population of those in jail. I then graphed these proportions throughout time by putting these calculations into a dataset, then filtering it for Amelia County. Then, by using ggplot, the data points were graphed and connected through different colored lines according to race. Through this line plot, we can see that those who were least incarcerated were those of Asian American/ Pacific Islander and White descent, while Black, LatinX, and Native Americans take the lead. 
 
 
 
@@ -36,7 +36,9 @@ I included this line plot because it shows the difference in the proportion of s
 comparison_scatterplot
 ```
 
-I included this chart to compare counties's proportion of total populations in jail compared to the proportion of people in jail that were black (specifically, between the ages of 15 to 64) in 2010. This scatterplot can be used to see if there is any correlation between the amount of people in jail and the amount of people in jail that are black. It is clear in this chart that the higher percent of people in jail, there is a correlation to a higher proportion of those in jail are black. It seems to be an exponential growth, meaning that the correlation between the two variables increases at an increasing rate. I also added a legend of the region that each county represented is, so we can see the general location of the counties to make more correlations. 
+I included this chart to compare counties's proportion of total populations in jail compared to the proportion of people in jail that were black (specifically, between the ages of 15 to 64) in 2010. I calculated these proportions by dividing the total jail population by the total population for the X axis, 'Proportion of Population in Jail', and dividing the population of those in jail who are black by the total population of people in jail for the Y axis, 'Proportion of Jail that are Black'. I then used ggplot to plot these data points, and then I used different colors to indicate different regions in the US. 
+
+This scatterplot can be used to see if there is any correlation between the amount of people in jail and the amount of people in jail that are black. It is clear in this chart that the higher percent of people in jail, there is a correlation to a higher proportion of those in jail are black. It seems to be an exponential growth, meaning that the correlation between the two variables increases at an increasing rate. I also added a legend of the region that each county represented is, so we can see the general location of the counties to make more correlations. 
 
 
 
@@ -46,4 +48,6 @@ I included this chart to compare counties's proportion of total populations in j
 map_plot
 ```
 
-I included this map to compare the proportions of those in jail who were White, and those in jail who were Black in 2010. The "Black to White Proportion" is the calculation of the two variables divided, to get a ratio of proportions of Black people in jail to the proportion of White people in jail. The lighter the color, the larger that proportion is. Meaning, that the lighter the color, the smaller the proportion of Black people to White people. We can see here that the majority of the state is darker blue, meaning that the proportion of Black people in jails is larger than the proportion of White people in Jail. 
+I included this map to compare the proportions of those in jail who were White, and those in jail who were Black in 2010. The variables represented in this map were calculated through a series of proportions. First, I found the proportion of the number of black people in jail vs total amount of people in jail by dividing the two, and the same with with the number of white people in jail vs the total amount of people in jail. I then divided these two proportions to find the ratio of blacks to white in jail. I then manipulated my datasets so that I was able to represent the data using ggplot.
+
+In the map, the lighter the color, the larger that proportion is. Meaning, that the lighter the color, the smaller the proportion of Black people to White people. We can see here that the majority of the state is darker blue, meaning that the proportion of Black people in jails is larger than the proportion of White people in Jail. 
